@@ -1,6 +1,6 @@
 # PUC Minas - IA Generativa e Aplicações com LLMs
 
-Repositório com atividades, projetos, anotações e aplicações desenvolvidas durante a pós-graduação em IA Generativa e Aplicações com LLMs da PUC Minas.
+Repositório com atividades, projetos e aplicações desenvolvidas na pós-graduação em IA Generativa e Aplicações com LLMs da PUC Minas, utilizando Python, Machine Learning, NLP, IA Generativa e técnicas de Ciência de Dados.
 
 ## Sobre o curso
 
