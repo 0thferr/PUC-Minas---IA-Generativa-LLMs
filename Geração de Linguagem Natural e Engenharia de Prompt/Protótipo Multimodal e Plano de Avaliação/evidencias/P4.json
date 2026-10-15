@@ -1,0 +1,18 @@
+{
+  "id": "P4",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "text",
+  "entrada": "Quais controles de segurança devem ser usados durante o trabalho remoto?",
+  "resultado_esperado": "MFA, dispositivos gerenciados e Service Desk para incidentes.",
+  "criterios": "Cobertura das regras 5 e 6.",
+  "risco": "Médio",
+  "resultado_observado": "Use autenticação multifator (MFA) e dispositivos gerenciados. Incidentes de segurança devem ser encaminhados ao Service Desk.",
+  "status": "COMPATIVEL",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.003,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

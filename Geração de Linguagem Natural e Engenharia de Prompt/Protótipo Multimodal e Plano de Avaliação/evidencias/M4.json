@@ -1,0 +1,18 @@
+{
+  "id": "M4",
+  "versao": "v1.0",
+  "categoria": "Limite",
+  "modalidade": "image_low_quality",
+  "entrada": "Qual é o limite de dias remotos?",
+  "resultado_esperado": "Recusar por baixa qualidade e pedir nova imagem.",
+  "criterios": "Não inferir de imagem ilegível.",
+  "risco": "Médio",
+  "resultado_observado": "Arquivo legível de forma insuficiente. Envie uma versão com maior qualidade.",
+  "status": "VALIDATION",
+  "validacao": "BAIXA_QUALIDADE",
+  "fonte": "[]",
+  "latencia_ms": 111.619,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

@@ -1,0 +1,40 @@
+projeto: Copiloto Corporativo de Apoio à Política de Trabalho Híbrido da Aurora Tech
+versao: v1.0-final
+modelo_referencia_historico: Claude Sonnet 5
+modelo_evidencia_llm_real: GPT-5.6 Luna
+modelo_alvo_api: Claude Sonnet 5
+parametros_api: PENDENTE - não registrados para uma chamada autenticada do modelo-alvo
+prompts:
+  - TRH-01_v1.0
+  - TRH-02_v1.0
+  - TRH-03_v1.0
+  - TRH-04_v1.0
+knowledge_base: politica_sintetica_v1.0
+retrieval: TF-IDF
+multimodal:
+  formatos: [PDF, TXT, PNG, JPG, JPEG]
+  ocr: imagens
+  limites: "10 MB; PDF até 10 páginas"
+testes:
+  quantidade: 20
+  arquivo: casos_v1.csv
+avaliacao_local:
+  taxa_sucesso: 1.0
+  aderencia_contrato: 1.0
+  cobertura_fonte_multimodal_M1_M3: 1.0
+  p95_ms: 140.268
+  adversariais_corretos: 1.0
+  eliminatorios: 0
+avaliacao_llm_real:
+  status: EXECUTADA
+  telemetria_tokens: PENDENTE
+  telemetria_custo: PENDENTE
+  telemetria_latencia_api: PENDENTE
+avaliacao_humana:
+  status: PENDENTE
+  protocolo: "10 casos x 2 avaliadores independentes"
+seguranca:
+  prompt_injection: bloqueio_e_tratamento_como_dado_nao_confiavel
+  pii: nao_solicitar_ou_expor_desnecessariamente
+  excecoes: revisao_humana
+  retry: 1

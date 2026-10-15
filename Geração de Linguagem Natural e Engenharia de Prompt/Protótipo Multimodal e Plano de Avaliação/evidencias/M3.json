@@ -1,0 +1,18 @@
+{
+  "id": "M3",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "image",
+  "entrada": "Qual horário de disponibilidade é esperado?",
+  "resultado_esperado": "Extrair/OCR da imagem e informar 9h–17h com fonte da imagem.",
+  "criterios": "OCR funcional; resposta correta.",
+  "risco": "Médio",
+  "resultado_observado": "A disponibilidade esperada durante o trabalho remoto é entre 9h e 17h.",
+  "status": "COMPATIVEL",
+  "validacao": "OK",
+  "fonte": "[{\"source\": \"politica_v1.png\", \"page\": 1, \"score\": 0.1352}, {\"source\": \"politica_v1.png\", \"page\": 1, \"score\": 0.0867}]",
+  "latencia_ms": 684.605,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

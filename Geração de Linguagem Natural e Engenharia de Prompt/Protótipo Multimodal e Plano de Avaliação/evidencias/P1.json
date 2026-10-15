@@ -1,0 +1,18 @@
+{
+  "id": "P1",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "text",
+  "entrada": "Quantos dias por semana um colaborador elegível pode trabalhar remotamente?",
+  "resultado_esperado": "Até dois dias por semana, definidos com o gestor.",
+  "criterios": "Resposta factual; rota T1; sem invenção.",
+  "risco": "Baixo",
+  "resultado_observado": "Colaboradores elegíveis podem trabalhar remotamente até dois dias por semana, definidos com o gestor.",
+  "status": "COMPATIVEL",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.044,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

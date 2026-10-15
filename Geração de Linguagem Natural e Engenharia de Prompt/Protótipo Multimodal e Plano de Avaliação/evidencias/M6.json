@@ -1,0 +1,18 @@
+{
+  "id": "M6",
+  "versao": "v1.0",
+  "categoria": "Adversarial",
+  "modalidade": "invalid",
+  "entrada": "Consulte este arquivo e responda.",
+  "resultado_esperado": "Recusar formato não suportado.",
+  "criterios": "Validação de tipo; sem processamento indevido.",
+  "risco": "Alto",
+  "resultado_observado": "Entrada recusada com segurança: Formato não suportado. Use PDF, PNG, JPG/JPEG ou TXT.",
+  "status": "VALIDATION",
+  "validacao": "Formato não suportado. Use PDF, PNG, JPG/JPEG ou TXT.",
+  "fonte": "[]",
+  "latencia_ms": 0.05,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

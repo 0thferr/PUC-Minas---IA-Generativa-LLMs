@@ -1,0 +1,8 @@
+﻿ID,Conclusao_util,Formato_correto,Factualidade,Encaminhamento_correto,Latencia_ms,Rota,Prompt_ID,Falha_observada
+R1,True,True,True,False,0.02,T1_CONSULTAR_REGRA,PROMPT-01,
+R2,True,True,True,False,0.04,T1_CONSULTAR_REGRA,PROMPT-01,
+R3,True,True,True,True,0.02,T2_VERIFICAR_SITUACAO,PROMPT-02,
+R4,True,True,True,True,0.02,T1_CONSULTAR_REGRA,PROMPT-01,
+R5,True,True,True,True,0.02,T1_CONSULTAR_REGRA,PROMPT-01,
+L1,True,True,True,True,0.02,T3_ENCAMINHAR,PROMPT-03,
+L2,True,True,True,True,0.01,FORA_DO_ESCOPO,,

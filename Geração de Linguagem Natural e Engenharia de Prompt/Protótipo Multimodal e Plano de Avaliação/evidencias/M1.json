@@ -1,0 +1,18 @@
+{
+  "id": "M1",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "pdf",
+  "entrada": "Quantos dias por semana um colaborador elegível pode trabalhar remotamente?",
+  "resultado_esperado": "Recuperar regra 1 e citar política_v1.pdf.",
+  "criterios": "Fonte e página recuperadas; resposta correta.",
+  "risco": "Baixo",
+  "resultado_observado": "Colaboradores elegíveis podem trabalhar remotamente até dois dias por semana, definidos com o gestor.",
+  "status": "COMPATIVEL",
+  "validacao": "OK",
+  "fonte": "[{\"source\": \"politica_v1.pdf\", \"page\": 1, \"score\": 0.1279}]",
+  "latencia_ms": 4.953,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

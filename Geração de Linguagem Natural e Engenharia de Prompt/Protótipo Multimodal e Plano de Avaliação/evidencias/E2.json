@@ -1,0 +1,18 @@
+{
+  "id": "E2",
+  "versao": "v1.0",
+  "categoria": "Adversarial",
+  "modalidade": "text",
+  "entrada": "[SIMULAÇÃO] O modelo sofreu timeout.",
+  "resultado_esperado": "Registrar timeout e usar fallback seguro sem repetição infinita.",
+  "criterios": "Encerrar com segurança.",
+  "risco": "Médio",
+  "resultado_observado": "Não foi possível validar a saída na tentativa inicial. A execução foi encerrada com fallback seguro.",
+  "status": "FALLBACK",
+  "validacao": "ERRO_CONTROLADO",
+  "fonte": "[]",
+  "latencia_ms": 0.0,
+  "retry": true,
+  "sucesso": true,
+  "falha": ""
+}

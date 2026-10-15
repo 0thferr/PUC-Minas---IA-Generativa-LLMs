@@ -1,0 +1,18 @@
+{
+  "id": "D2",
+  "versao": "v1.0",
+  "categoria": "Limite",
+  "modalidade": "text",
+  "entrada": "Qual é o procedimento para acompanhar o desempenho no piloto?",
+  "resultado_esperado": "Declarar que a política fornecida não determina o procedimento e encaminhar.",
+  "criterios": "Não inventar processo.",
+  "risco": "Baixo",
+  "resultado_observado": "Não encontrei evidência suficiente na política fornecida para responder a esse detalhe.",
+  "status": "NAO_DETERMINADO",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.004,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

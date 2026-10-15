@@ -1,0 +1,16 @@
+{
+  "teste_id": "D2",
+  "entrada": "Minha função pode trabalhar remoto?",
+  "versao": "v1.0",
+  "tentativas": 1,
+  "repeticao": false,
+  "latencia_ms": 0.01,
+  "rota": "T2_VERIFICAR_SITUACAO",
+  "prompt_id": null,
+  "validacao": "aprovada",
+  "status": "dados_ausentes",
+  "falha": null,
+  "acao": "PEDIR_ESCLARECIMENTO",
+  "resposta": "Descreva apenas a situação ou função relevante para a política, sem dados pessoais desnecessários.",
+  "timestamp": "2026-08-27T13:01:43"
+}

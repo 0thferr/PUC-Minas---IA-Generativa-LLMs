@@ -1,0 +1,980 @@
+PROMPT MESTRE — TRABALHO 6
+COPILOTO INTELIGENTE CORPORATIVO — AURORA TECH
+
+Você é responsável por consolidar e finalizar o Trabalho 6 — Copiloto Inteligente Corporativo, utilizando como fonte principal todos os materiais dos Trabalhos 1, 2, 3, 4 e 5 fornecidos pelo usuário.
+
+OBJETIVO
+
+Produzir a entrega final completa, auditável e academicamente defensável do projeto “Copiloto Corporativo de Apoio à Política de Trabalho Híbrido da Aurora Tech”.
+
+O resultado NÃO deve ser apenas uma interface funcionando. Deve demonstrar:
+
+- evolução técnica do projeto;
+- rastreabilidade das versões;
+- arquitetura;
+- controle de prompts;
+- controle da base de conhecimento;
+- testes;
+- avaliação;
+- segurança;
+- tratamento de ambiguidades;
+- tratamento de entradas multimodais;
+- falhas controladas;
+- encaminhamento para humanos;
+- riscos residuais;
+- critérios de aprovação;
+- limitações;
+- próximos passos para produção.
+
+IMPORTANTE:
+Não invente resultados, métricas, chamadas de API, avaliações humanas, custos, latências ou comportamentos de modelos que não tenham sido realmente executados.
+
+Sempre diferencie:
+
+1. resultado realmente medido;
+2. resultado proveniente do executor determinístico;
+3. resultado esperado/simulado;
+4. dado documental;
+5. hipótese;
+6. informação ainda pendente.
+
+==================================================
+1. ANALISAR TODOS OS ARQUIVOS
+==================================================
+
+Analise integralmente os materiais fornecidos referentes aos:
+
+- Trabalho 1;
+- Trabalho 2;
+- Trabalho 3;
+- Trabalho 4;
+- Trabalho 5;
+- enunciado do Trabalho 6, se fornecido.
+
+Não substitua o conteúdo dos trabalhos anteriores por conhecimento genérico.
+
+Primeiro construa uma tabela de rastreabilidade:
+
+Trabalho | Objetivo | Modelo | Prompt | Base de conhecimento | Funcionalidades | Testes | Resultados | Limitações | Evolução para o próximo trabalho
+
+Depois construa a evolução:
+
+T1 → T2 → T3 → T4 → T5 → T6
+
+Identifique explicitamente o que mudou entre cada versão.
+
+==================================================
+2. CONTEXTO DO PROJETO
+==================================================
+
+O projeto é:
+
+“Copiloto Corporativo de Apoio à Política de Trabalho Híbrido da Aurora Tech”.
+
+Público-alvo:
+
+- colaboradores;
+- gestores;
+- usuários do piloto da política de trabalho híbrido.
+
+O copiloto deve fornecer respostas fundamentadas na política corporativa disponível, sem substituir:
+
+- RH;
+- gestores;
+- diretoria;
+- Service Desk;
+- processos oficiais da empresa.
+
+As três tarefas principais são:
+
+T1 — Consultar regra
+Localizar e interpretar informações existentes na base.
+
+A resposta deve conter:
+- resposta direta;
+- regra utilizada;
+- próximo passo.
+
+T2 — Verificar situação
+Comparar uma situação apresentada pelo usuário com as condições documentadas.
+
+Possíveis resultados:
+- compatível;
+- não determinado;
+- requer encaminhamento/revisão humana.
+
+T3 — Orientar encaminhamento
+Identificar situações que exigem aprovação, exceção ou informação adicional e indicar o responsável adequado.
+
+==================================================
+3. LIMITES FUNCIONAIS
+==================================================
+
+O sistema NÃO deve:
+
+- aprovar exceções;
+- registrar exceções;
+- alterar a política;
+- criar regras;
+- inventar benefícios;
+- inventar datas;
+- inventar procedimentos;
+- tomar decisões da diretoria;
+- acessar dados pessoais desnecessários;
+- acessar sistemas corporativos sem autorização;
+- substituir RH;
+- substituir gestores;
+- substituir o Service Desk;
+- fornecer informações fora do escopo da política.
+
+Quando faltar informação, o sistema deve declarar a insuficiência da base.
+
+Quando houver necessidade de decisão humana, deve encaminhar para o responsável adequado.
+
+==================================================
+4. BASE DE CONHECIMENTO
+==================================================
+
+Compare as bases utilizadas nos Trabalhos 2, 3, 4 e 5.
+
+NÃO misture automaticamente conteúdos diferentes.
+
+Identifique:
+
+- versão da base do Trabalho 2;
+- versão da base do Trabalho 3;
+- versão utilizada no Trabalho 4;
+- versão utilizada no Trabalho 5;
+- versão que deverá ser congelada como base final do Trabalho 6.
+
+Caso existam diferenças, crie uma tabela:
+
+Informação | T2 | T3 | T4 | T5 | Base final | Decisão
+
+Explique qualquer alteração.
+
+A base final deve ser explicitamente versionada.
+
+Crie, no mínimo:
+
+KB_VERSION = X.Y
+
+E registre:
+
+- conteúdo;
+- origem;
+- data;
+- alterações;
+- responsável;
+- versão utilizada nos testes.
+
+==================================================
+5. MODELOS
+==================================================
+
+Utilize os dados efetivamente registrados no Trabalho 1.
+
+Os modelos comparados foram:
+
+- Claude Sonnet 5;
+- Grok 4.5;
+- Gemini 3.1 Pro Preview.
+
+O Trabalho 1 apresentou as seguintes médias:
+
+Claude Sonnet 5: 99,25/100
+Grok 4.5: 95,75/100
+Gemini 3.1 Pro Preview: 91,25/100
+
+IMPORTANTE:
+
+Esses resultados devem ser apresentados como resultados do Trabalho 1.
+
+Não atribua esses valores a novos experimentos.
+
+Também registre que o Trabalho 1 não possuía telemetria completa das execuções reais, como:
+
+- versão efetiva;
+- temperatura;
+- top-p;
+- max tokens;
+- latência;
+- tokens;
+- custo.
+
+Não invente esses dados.
+
+Se o Trabalho 5 ou o código fornecido especificar um modelo candidato/final, utilize exatamente o modelo registrado nesses materiais.
+
+==================================================
+6. PROMPTS
+==================================================
+
+Consolidar a evolução da biblioteca de prompts.
+
+O Trabalho 3 possui:
+
+- PROMPT-01 — Consulta de regra;
+- PROMPT-02 — Verificação de situação;
+- PROMPT-03 — Encaminhamento seguro;
+- PROMPT-04 — Triagem e roteamento.
+
+Também existem versões do prompt crítico:
+
+- v0.1;
+- v0.2;
+- v0.3.
+
+Documentar:
+
+- finalidade;
+- versão;
+- mudanças;
+- motivo da mudança;
+- impacto esperado;
+- testes associados.
+
+Se o Trabalho 5 utiliza nomenclatura diferente, como TRH-01 a TRH-04, documentar explicitamente a relação entre as nomenclaturas.
+
+NÃO apagar a rastreabilidade histórica.
+
+Criar:
+
+prompts/historico_prompts.md
+
+==================================================
+7. ARQUITETURA FINAL
+==================================================
+
+Produzir a arquitetura final do sistema.
+
+Ela deve conter pelo menos:
+
+Interface
+↓
+Validação da entrada
+↓
+Validação de arquivo
+↓
+Triagem
+↓
+Roteamento
+↓
+Recuperação de contexto/evidências
+↓
+Prompt
+↓
+Modelo LLM
+↓
+Validação da saída
+↓
+Correção/retry
+↓
+Resposta ou revisão humana
+↓
+Logs/auditoria
+
+Para multimodal:
+
+Imagem/PDF/TXT
+↓
+Validação
+↓
+OCR/extração
+↓
+Recuperação de evidência
+↓
+LLM
+↓
+Validação
+↓
+Resposta com fonte
+
+Demonstrar também:
+
+- segurança;
+- logs;
+- rastreabilidade;
+- controle de acesso;
+- fallback;
+- tratamento de erro;
+- revisão humana.
+
+Criar uma descrição textual da arquitetura e, se possível, gerar também um diagrama visual.
+
+==================================================
+8. LANGGRAPH
+==================================================
+
+Se o código dos Trabalhos 4/5 ou ambiente disponível permitir, estruturar o fluxo final utilizando estados explícitos, por exemplo:
+
+RECEIVE_INPUT
+VALIDATE_INPUT
+TRIAGE
+CLARIFICATION
+RETRIEVE_EVIDENCE
+GENERATE_RESPONSE
+VALIDATE_OUTPUT
+RETRY
+REFUSE
+HUMAN_REVIEW
+LOG_EVIDENCE
+END
+
+O fluxo deve deixar claro:
+
+- quando há resposta;
+- quando é necessário pedir esclarecimento;
+- quando ocorre recuperação de evidência;
+- quando ocorre retry;
+- quando ocorre recusa;
+- quando ocorre revisão humana.
+
+O retry deve ser limitado a uma tentativa, conforme especificação do projeto.
+
+Se LangGraph não estiver efetivamente implementado nos arquivos, NÃO declarar que está implementado.
+
+Nesse caso, apresentar como arquitetura planejada ou evolução futura.
+
+==================================================
+9. MCP
+==================================================
+
+Se houver implementação ou código correspondente, documentar o MCP como camada controlada de acesso à base autorizada.
+
+O MCP deve retornar, quando aplicável:
+
+- evidência;
+- trecho;
+- fonte;
+- versão da fonte;
+- confiança.
+
+O MCP NÃO deve:
+
+- aprovar exceções;
+- alterar regras;
+- executar ações de RH;
+- acessar dados pessoais sem autorização;
+- tomar decisões administrativas.
+
+Se MCP não tiver sido efetivamente implementado, registrar isso claramente e apresentar a implementação como próxima etapa.
+
+==================================================
+10. MULTIMODAL
+==================================================
+
+Consolidar as funcionalidades do Trabalho 5:
+
+- PDF;
+- TXT;
+- imagens;
+- OCR;
+- recuperação de evidências;
+- fonte/página quando disponível.
+
+Documentar:
+
+- tipos de entrada aceitos;
+- validações;
+- formatos inválidos;
+- limites;
+- tratamento de erro;
+- origem das evidências.
+
+Não afirmar que OCR ou multimodalidade funcionam em cenários que não tenham sido efetivamente testados.
+
+==================================================
+11. SUÍTE DE 20 TESTES
+==================================================
+
+Utilizar os 20 casos existentes no Trabalho 5 como base.
+
+Preservar os IDs originais.
+
+Classificar corretamente os casos conforme os dados reais encontrados.
+
+No material anterior foram identificados:
+
+- 8 casos representativos;
+- 5 casos de limite;
+- 7 casos adversariais.
+
+Total:
+
+20 casos.
+
+Verificar os arquivos para confirmar essa classificação.
+
+Não alterar artificialmente os resultados.
+
+Criar uma tabela:
+
+ID | Categoria | Entrada | Resultado esperado | Resultado obtido | Fonte | Passou | Observações
+
+==================================================
+12. REGRA DE REEXECUÇÃO
+==================================================
+
+O Trabalho 6 exige que qualquer alteração relevante em:
+
+- modelo;
+- parâmetros;
+- prompt;
+- base;
+- fluxo;
+- funcionalidade multimodal;
+- validação;
+
+implique nova execução da suíte completa de 20 casos.
+
+Portanto:
+
+1. Identifique a versão final.
+2. Compare com a versão do Trabalho 5.
+3. Liste todas as mudanças.
+4. Se houver mudança relevante, execute novamente os 20 casos.
+5. Não reutilize resultados antigos como se fossem resultados da nova versão.
+
+Criar:
+
+tests/casos_20.json
+tests/resultados_20.json
+
+==================================================
+13. EVIDÊNCIA EMPÍRICA COM LLM REAL
+==================================================
+
+Esta é uma das partes pendentes mais importantes.
+
+Se houver acesso real a uma API de LLM, execute os 20 casos utilizando o modelo final definido pelo projeto.
+
+Registrar para cada caso:
+
+- ID;
+- modelo;
+- versão do modelo, se disponível;
+- prompt;
+- versão da base;
+- temperatura;
+- top_p;
+- max_tokens;
+- timestamp;
+- latência;
+- tokens de entrada;
+- tokens de saída;
+- custo estimado, se disponível;
+- resposta;
+- evidências recuperadas;
+- fonte;
+- resultado esperado;
+- resultado obtido;
+- aprovado/reprovado.
+
+Também calcular:
+
+- taxa de sucesso;
+- factualidade;
+- aderência ao formato;
+- cobertura de fonte;
+- taxa de recusa correta;
+- taxa de encaminhamento correto;
+- latência média;
+- p95;
+- tokens médios;
+- custo médio;
+- custo total.
+
+IMPORTANTE:
+
+Se NÃO houver API, credencial, modelo executável ou acesso à internet:
+
+NÃO inventar resultados.
+
+Nesse caso:
+
+- preparar o executor;
+- deixar os 20 casos prontos;
+- deixar o código pronto para execução;
+- indicar exatamente como executar;
+- marcar os resultados como PENDENTES;
+- separar claramente os resultados determinísticos do Trabalho 5 dos resultados empíricos reais.
+
+==================================================
+14. COMPARAÇÃO DETERMINÍSTICA × LLM REAL
+==================================================
+
+Criar uma tabela:
+
+Métrica | Executor determinístico | LLM real | Diferença
+
+Nunca tratar o executor determinístico como benchmark do LLM.
+
+Explicar que o executor determinístico valida o fluxo/contrato, enquanto a execução real avalia comportamento efetivo do modelo.
+
+==================================================
+15. AVALIAÇÃO HUMANA
+==================================================
+
+Criar protocolo de avaliação humana para os 20 casos.
+
+Preferencialmente:
+
+20 casos × 2 avaliadores independentes.
+
+Cada avaliador deverá avaliar:
+
+- correção/fidelidade;
+- relevância;
+- clareza;
+- completude;
+- aderência ao formato;
+- segurança/limites;
+- utilização correta das evidências;
+- encaminhamento correto.
+
+Usar escala de 1 a 5, mantendo compatibilidade com a metodologia do Trabalho 1 quando possível.
+
+Criar formulário/tabela:
+
+Caso | Avaliador | Correção | Relevância | Clareza | Completude | Formato | Segurança | Observações
+
+Calcular:
+
+- média por critério;
+- média geral;
+- concordância entre avaliadores, quando possível;
+- casos com divergência;
+- principais falhas;
+- exemplos de respostas problemáticas.
+
+IMPORTANTE:
+
+Não inventar avaliações humanas.
+
+Se não houver avaliadores humanos reais disponíveis:
+
+- criar o formulário;
+- criar o protocolo;
+- preparar os 20 casos;
+- criar uma planilha/tabela para preenchimento;
+- marcar o resultado como PENDENTE DE AVALIAÇÃO HUMANA.
+
+Não apresentar avaliações simuladas como avaliação humana real.
+
+==================================================
+16. CRITÉRIOS DE SUCESSO
+==================================================
+
+Utilizar os critérios já definidos nos Trabalhos anteriores quando aplicáveis.
+
+Entre eles:
+
+- conclusão >=90%;
+- aderência ao formato >=90%;
+- factualidade >=95%;
+- recusa/encaminhamento correto = 100% nos casos de borda;
+- latência média <=10s, quando essa métrica puder ser comparada adequadamente.
+
+Não comparar métricas de ambientes diferentes sem explicar a diferença.
+
+==================================================
+17. SEIS CENAS DE SMOKE TEST
+==================================================
+
+Preparar demonstração das seis cenas:
+
+CENA 1 — Pergunta principal
+Pergunta respondida com fonte/evidência e próximo passo.
+
+CENA 2 — Pergunta ambígua
+Sistema pede esclarecimento antes de responder.
+
+CENA 3 — Entrada multimodal válida
+PDF, TXT ou imagem válida processada corretamente.
+
+CENA 4 — Fora de escopo/sem autorização
+Sistema recusa ou encaminha corretamente.
+
+CENA 5 — Falha controlada
+Arquivo inválido, timeout ou outro erro controlado.
+
+CENA 6 — Revisão humana
+Caso em que o sistema não pode tomar a decisão sozinho.
+
+Para cada cena documentar:
+
+- entrada;
+- comportamento esperado;
+- comportamento obtido;
+- evidência;
+- resultado;
+- risco demonstrado.
+
+==================================================
+18. MATRIZ DE RISCOS
+==================================================
+
+Criar matriz contendo:
+
+Risco
+Descrição
+Probabilidade
+Impacto
+Severidade
+Controle
+Mitigação
+Responsável
+Status
+
+Incluir pelo menos riscos relacionados a:
+
+- alucinação;
+- informação desatualizada;
+- base incompleta;
+- prompt injection;
+- arquivo malicioso;
+- OCR incorreto;
+- resposta sem fonte;
+- acesso indevido;
+- dados pessoais;
+- decisão indevida;
+- falha do modelo;
+- indisponibilidade da API;
+- erro de roteamento;
+- falso encaminhamento;
+- vazamento de informações.
+
+==================================================
+19. GATE FINAL
+==================================================
+
+Criar uma decisão de gate baseada exclusivamente nos dados encontrados.
+
+Não utilizar “nota geral” ou ranking arbitrário.
+
+Classificar cada requisito como:
+
+- ATENDIDO;
+- PARCIALMENTE ATENDIDO;
+- PENDENTE;
+- NÃO IMPLEMENTADO.
+
+Avaliar:
+
+- testes;
+- segurança;
+- rastreabilidade;
+- multimodalidade;
+- evidência;
+- avaliação humana;
+- documentação;
+- observabilidade;
+- governança.
+
+O gate final deve deixar explícito o que já foi comprovado e o que ainda precisa ser realizado.
+
+==================================================
+20. PRODUÇÃO
+==================================================
+
+Deixar claro que aprovação acadêmica não significa autorização para produção.
+
+Criar seção:
+
+“Pré-requisitos para produção”
+
+Incluindo:
+
+- testes com dados autorizados;
+- segurança;
+- controle de acesso;
+- LGPD/governança;
+- observabilidade;
+- logs;
+- monitoramento;
+- gestão de versões;
+- avaliação contínua;
+- aprovação do negócio;
+- plano de rollback;
+- revisão humana;
+- controle de custos;
+- SLA;
+- testes de segurança;
+- testes de prompt injection;
+- atualização controlada da base.
+
+==================================================
+21. MANIFESTO FINAL
+==================================================
+
+Criar:
+
+release/manifesto_final.md
+
+Contendo:
+
+Nome do projeto
+Versão final
+Data
+Modelo
+Parâmetros
+Base de conhecimento
+Versão da base
+Versão dos prompts
+Versão do fluxo
+Versão multimodal
+Versão da suíte de 20 testes
+Versão do código
+Critérios de avaliação
+Status da avaliação LLM
+Status da avaliação humana
+Limitações conhecidas
+Responsáveis
+
+==================================================
+22. CONFIGURAÇÃO FINAL
+==================================================
+
+Criar:
+
+release/configuracao_final.yaml
+
+Com informações estruturadas sobre:
+
+- projeto;
+- versão;
+- modelo;
+- parâmetros;
+- prompts;
+- knowledge base;
+- testes;
+- multimodal;
+- segurança;
+- logging;
+- avaliação.
+
+==================================================
+23. README
+==================================================
+
+Criar README.md contendo:
+
+1. descrição;
+2. problema;
+3. público;
+4. objetivos;
+5. arquitetura;
+6. instalação;
+7. execução;
+8. estrutura do projeto;
+9. modelos;
+10. prompts;
+11. base;
+12. multimodal;
+13. testes;
+14. avaliação;
+15. limitações;
+16. riscos;
+17. governança;
+18. produção;
+19. contribuição dos integrantes.
+
+==================================================
+24. APRESENTAÇÃO
+==================================================
+
+Criar estrutura de apresentação com aproximadamente 10–15 slides.
+
+Sugestão:
+
+Slide 1 — Título
+Slide 2 — Problema e público
+Slide 3 — Objetivos e três tarefas
+Slide 4 — Evolução T1 → T5
+Slide 5 — Arquitetura final
+Slide 6 — Prompts e versionamento
+Slide 7 — RAG/multimodalidade
+Slide 8 — Suíte de 20 testes
+Slide 9 — Evidência empírica com LLM
+Slide 10 — Avaliação humana
+Slide 11 — Seis cenas da demonstração
+Slide 12 — Riscos e controles
+Slide 13 — Gate final
+Slide 14 — Limitações
+Slide 15 — Próximos passos para produção
+
+Não esconder resultados pendentes.
+
+==================================================
+25. ROTEIRO DA DEMONSTRAÇÃO
+==================================================
+
+Criar roteiro de apresentação de aproximadamente 5–10 minutos.
+
+O roteiro deve explicar:
+
+- problema;
+- público;
+- tarefas;
+- evolução;
+- arquitetura;
+- evidências;
+- seis cenas;
+- avaliação;
+- riscos;
+- gate;
+- próximos passos.
+
+==================================================
+26. RETROSPECTIVA
+==================================================
+
+Criar RETROSPECTIVA.md contendo:
+
+- o que funcionou;
+- o que não funcionou;
+- principais problemas;
+- decisões técnicas;
+- mudanças entre versões;
+- limitações;
+- aprendizados;
+- melhorias futuras.
+
+==================================================
+27. ESTRUTURA FINAL DE ARQUIVOS
+==================================================
+
+Produzir, quando tecnicamente possível:
+
+TRABALHO_06_COPILOTO_INTELIGENTE/
+│
+├── release/
+│   ├── manifesto_final.md
+│   ├── versao_final.md
+│   └── configuracao_final.yaml
+│
+├── architecture/
+│   ├── arquitetura_final.md
+│   ├── arquitetura_final.png
+│   └── decisoes_tecnicas.md
+│
+├── prompts/
+│   ├── prompt_sistema.md
+│   ├── prompt_especialista.md
+│   ├── prompt_multimodal.md
+│   └── historico_prompts.md
+│
+├── knowledge/
+│   ├── base_final.md
+│   ├── versao_base.md
+│   └── changelog.md
+│
+├── tests/
+│   ├── casos_20.json
+│   ├── resultados_20.json
+│   └── avaliacao_humana.csv
+│
+├── evaluation/
+│   └── final/
+│       ├── avaliacao_final.md
+│       ├── metricas.csv
+│       ├── avaliacao_llm_real.md
+│       ├── avaliacao_humana.md
+│       ├── comparacao_baseline_candidata_final.md
+│       └── gate_final.md
+│
+├── risks/
+│   └── matriz_final.md
+│
+├── demo/
+│   ├── roteiro.md
+│   ├── cena_01_principal/
+│   ├── cena_02_ambigua/
+│   ├── cena_03_multimodal/
+│   ├── cena_04_fora_escopo/
+│   ├── cena_05_falha/
+│   └── cena_06_revisao_humana/
+│
+├── README.md
+├── CONTRIBUTIONS.md
+├── RETROSPECTIVA.md
+└── apresentacao.pptx
+
+==================================================
+28. REGRA ABSOLUTA CONTRA FABRICAÇÃO
+==================================================
+
+Esta regra é obrigatória.
+
+NUNCA:
+
+- invente execução de API;
+- invente resposta de LLM;
+- invente latência;
+- invente custo;
+- invente tokens;
+- invente avaliação humana;
+- invente aprovação;
+- invente fonte;
+- invente benchmark;
+- transforme simulação em experimento real;
+- transforme resultado determinístico em resultado de LLM.
+
+Quando algo não puder ser executado, escreva:
+
+“PENDENTE — não foi possível obter evidência empírica com os recursos disponíveis.”
+
+Depois forneça:
+
+- procedimento;
+- código;
+- formulário;
+- estrutura de dados;
+- comando necessário;
+- critério de avaliação.
+
+==================================================
+29. FORMATO DA RESPOSTA FINAL
+==================================================
+
+Ao concluir, apresentar:
+
+1. Resumo executivo;
+2. Diagnóstico dos Trabalhos 1–5;
+3. O que foi aproveitado;
+4. O que foi alterado;
+5. O que foi realmente executado;
+6. Evidência empírica com LLM real;
+7. Avaliação humana;
+8. Resultados dos 20 testes;
+9. Comparação das versões;
+10. Arquitetura;
+11. Prompts;
+12. Base de conhecimento;
+13. Multimodal;
+14. Segurança;
+15. Riscos;
+16. Gate final;
+17. Pendências;
+18. Próximos passos;
+19. Lista dos arquivos produzidos.
+
+No final, criar uma seção chamada:
+
+“STATUS REAL DA ENTREGA”
+
+Com três categorias:
+
+COMPROVADO
+- somente aquilo que possui evidência real.
+
+PARCIALMENTE COMPROVADO
+- aquilo que possui evidência limitada ou somente executor determinístico.
+
+PENDENTE
+- aquilo que exige execução real, avaliador humano, API, infraestrutura ou outro recurso ainda indisponível.
+
+O objetivo não é fazer o projeto parecer mais completo do que realmente está.
+
+O objetivo é produzir uma entrega tecnicamente consistente, rastreável, reproduzível e honesta quanto às evidências disponíveis.

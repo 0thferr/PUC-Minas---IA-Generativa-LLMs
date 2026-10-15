@@ -1,0 +1,16 @@
+{
+  "teste_id": "A2",
+  "entrada": "E se for diferente?",
+  "versao": "v1.0",
+  "tentativas": 0,
+  "repeticao": false,
+  "latencia_ms": 0,
+  "rota": null,
+  "prompt_id": null,
+  "validacao": null,
+  "status": "ambiguidade",
+  "falha": null,
+  "acao": "PEDIR_ESCLARECIMENTO",
+  "resposta": "A solicitação está ambígua. Especifique qual regra ou situação da política de trabalho híbrido você quer verificar.",
+  "timestamp": "2026-08-27T13:01:43"
+}

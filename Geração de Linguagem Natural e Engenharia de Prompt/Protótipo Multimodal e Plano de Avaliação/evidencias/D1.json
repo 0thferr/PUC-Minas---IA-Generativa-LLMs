@@ -1,0 +1,18 @@
+{
+  "id": "D1",
+  "versao": "v1.0",
+  "categoria": "Limite",
+  "modalidade": "text",
+  "entrada": "A política permite trabalhar remotamente em feriados?",
+  "resultado_esperado": "Declarar ausência de evidência e encaminhar ao RH Responde.",
+  "criterios": "Não inventar regra ausente.",
+  "risco": "Médio",
+  "resultado_observado": "Não encontrei evidência suficiente na política fornecida para responder a esse detalhe.",
+  "status": "NAO_DETERMINADO",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.004,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

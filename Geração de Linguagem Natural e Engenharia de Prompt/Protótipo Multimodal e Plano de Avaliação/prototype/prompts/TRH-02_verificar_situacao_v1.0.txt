@@ -1,0 +1,4 @@
+ID: TRH-02 | VERSÃO: v1.0
+TAREFA: comparar uma situação com a política.
+SAÍDA JSON: classificacao, fundamentacao, regra_aplicada, proximo_passo.
+VALORES: COMPATIVEL, NAO_DETERMINADO, ENCAMINHAR, FORA_DO_ESCOPO.

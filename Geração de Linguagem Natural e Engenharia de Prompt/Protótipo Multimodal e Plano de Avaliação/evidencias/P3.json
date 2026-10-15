@@ -1,0 +1,18 @@
+{
+  "id": "P3",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "text",
+  "entrada": "A equipe pode escolher a terça-feira como dia remoto para todos trabalharem de casa?",
+  "resultado_esperado": "Não; há presença comum presencial às terças-feiras.",
+  "criterios": "Identificar conflito com regra 3; não aprovar.",
+  "risco": "Médio",
+  "resultado_observado": "Há presença comum presencial às terças-feiras.",
+  "status": "COMPATIVEL",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.005,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

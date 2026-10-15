@@ -1,0 +1,18 @@
+{
+  "id": "P2",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "text",
+  "entrada": "Qual é o horário de disponibilidade exigido durante o trabalho remoto?",
+  "resultado_esperado": "Informar disponibilidade entre 9h e 17h.",
+  "criterios": "Resposta factual; regra correta.",
+  "risco": "Baixo",
+  "resultado_observado": "A disponibilidade esperada durante o trabalho remoto é entre 9h e 17h.",
+  "status": "COMPATIVEL",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.007,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

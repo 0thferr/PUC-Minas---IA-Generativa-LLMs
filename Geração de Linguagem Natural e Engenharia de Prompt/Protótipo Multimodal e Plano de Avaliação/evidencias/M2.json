@@ -1,0 +1,18 @@
+{
+  "id": "M2",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "pdf",
+  "entrada": "Quais controles de segurança devem ser usados durante o trabalho remoto?",
+  "resultado_esperado": "Recuperar regras 5 e 6 com fonte.",
+  "criterios": "Fidelidade; cobertura de fonte.",
+  "risco": "Médio",
+  "resultado_observado": "Use autenticação multifator (MFA) e dispositivos gerenciados. Incidentes de segurança devem ser encaminhados ao Service Desk.",
+  "status": "COMPATIVEL",
+  "validacao": "OK",
+  "fonte": "[{\"source\": \"politica_v1.pdf\", \"page\": 1, \"score\": 0.2237}, {\"source\": \"politica_v1.pdf\", \"page\": 1, \"score\": 0.2011}]",
+  "latencia_ms": 3.023,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

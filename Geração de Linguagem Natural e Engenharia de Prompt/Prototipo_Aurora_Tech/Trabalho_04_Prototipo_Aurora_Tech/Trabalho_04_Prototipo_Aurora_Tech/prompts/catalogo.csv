@@ -1,0 +1,5 @@
+﻿ID,Nome,Tarefa,Versao_ativa,Formato,Entradas_obrigatorias,Arquivo
+PROMPT-01,Consulta de Regra,T1_CONSULTAR_REGRA,v1.0,Texto estruturado,texto_base;pergunta,templates/PROMPT-01_consulta_regra_v1.0.txt
+PROMPT-02,Verificação de Situação,T2_VERIFICAR_SITUACAO,v1.0,JSON,texto_base;situacao,templates/PROMPT-02_verificacao_situacao_v1.0.txt
+PROMPT-03,Encaminhamento Seguro,T3_ENCAMINHAR,v1.0,Texto estruturado,texto_base;solicitacao,templates/PROMPT-03_encaminhamento_seguro_v1.0.txt
+PROMPT-04,Triagem e Roteamento,ROTEADOR,v1.0,JSON,texto_base;solicitacao,templates/PROMPT-04_triagem_roteamento_v1.0.txt

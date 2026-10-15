@@ -1,0 +1,16 @@
+{
+  "teste_id": "baseline_R1",
+  "entrada": "Quantos dias por semana um colaborador elegível pode trabalhar remotamente?",
+  "versao": "v1.0",
+  "tentativas": 2,
+  "repeticao": false,
+  "latencia_ms": 0.02,
+  "rota": "T1_CONSULTAR_REGRA",
+  "prompt_id": "PROMPT-01",
+  "validacao": "aprovada",
+  "status": "sucesso",
+  "falha": null,
+  "acao": "RESPONDER",
+  "resposta": "Resposta:\nAté dois dias remotos por semana para colaboradores elegíveis.\n\nFundamentação/Regra aplicada:\nA política permite até dois dias remotos por semana e determina que os dias sejam definidos com o gestor.\n\nPróximo passo:\nDefina os dias com o gestor.",
+  "timestamp": "2026-08-27T13:01:54"
+}

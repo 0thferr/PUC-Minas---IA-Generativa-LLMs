@@ -1,0 +1,12 @@
+POLÍTICA-PILOTO DE TRABALHO HÍBRIDO — AURORA TECH
+
+1. Colaboradores elegíveis podem trabalhar remotamente até dois dias por semana.
+2. Os dias remotos devem ser definidos com o gestor.
+3. Há presença comum presencial às terças-feiras.
+4. A disponibilidade esperada é entre 9h e 17h.
+5. O trabalho remoto exige autenticação multifator (MFA) e uso de dispositivos gerenciados.
+6. Incidentes de segurança devem ser encaminhados ao Service Desk.
+7. Dúvidas ou detalhes não determinados pela política devem ser encaminhados ao canal interno RH Responde.
+8. O copiloto não aprova exceções. Pedidos de exceção dependem de decisão humana e devem ser encaminhados.
+9. O copiloto não deve solicitar credenciais, dados pessoais desnecessários ou expor dados pessoais de terceiros.
+10. Assuntos fora da política de trabalho híbrido devem ser recusados de forma objetiva.

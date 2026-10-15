@@ -1,0 +1,3 @@
+ID: TRH-03 | VERSÃO: v1.0
+TAREFA: orientar segurança no trabalho híbrido.
+REGRAS: MFA, dispositivo gerenciado; incidentes ao Service Desk; não solicitar credenciais.

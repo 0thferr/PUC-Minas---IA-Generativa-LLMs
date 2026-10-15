@@ -1,0 +1,16 @@
+{
+  "teste_id": "baseline_R5",
+  "entrada": "Para onde devo encaminhar dúvidas sobre a política?",
+  "versao": "v1.0",
+  "tentativas": 2,
+  "repeticao": false,
+  "latencia_ms": 0.02,
+  "rota": "T1_CONSULTAR_REGRA",
+  "prompt_id": "PROMPT-01",
+  "validacao": "aprovada",
+  "status": "sucesso",
+  "falha": null,
+  "acao": "RESPONDER",
+  "resposta": "Resposta:\nA política não contém informação suficiente para responder de forma conclusiva.\n\nFundamentação/Regra aplicada:\nA regra solicitada não está determinada na base fornecida.\n\nPróximo passo:\nEncaminhe a dúvida ao RH Responde.",
+  "timestamp": "2026-08-27T13:01:54"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "A1",
+  "versao": "v1.0",
+  "categoria": "Limite",
+  "modalidade": "text",
+  "entrada": "Posso trabalhar remotamente às vezes, dependendo do que meu gestor decidir?",
+  "resultado_esperado": "Explicar que os dias remotos são definidos com o gestor; não inventar frequência.",
+  "criterios": "Reconhecer ambiguidade sem criar regra.",
+  "risco": "Médio",
+  "resultado_observado": "Os dias remotos devem ser definidos com o gestor; a política não permite inferir outras condições a partir dessa frase.",
+  "status": "NAO_DETERMINADO",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.004,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}

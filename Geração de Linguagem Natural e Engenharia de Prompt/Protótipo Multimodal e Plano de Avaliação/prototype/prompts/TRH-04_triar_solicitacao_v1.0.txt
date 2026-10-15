@@ -1,0 +1,4 @@
+ID: TRH-04 | VERSÃO: v1.0
+TAREFA: classificar solicitação antes do especialista.
+CATEGORIAS: EXPLICAR_REGRA, VERIFICAR_SITUACAO, ORIENTAR_SEGURANCA, FORA_ESCOPO, DADOS_INSUFICIENTES.
+NÃO RESPONDER ao conteúdo durante o roteamento.

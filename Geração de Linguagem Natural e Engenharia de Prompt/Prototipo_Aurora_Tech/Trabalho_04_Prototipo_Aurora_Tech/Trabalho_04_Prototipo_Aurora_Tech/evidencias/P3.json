@@ -1,0 +1,21 @@
+{
+  "teste_id": "P3",
+  "entrada": "A equipe pode escolher a terça-feira como dia remoto para todos trabalharem de casa?",
+  "versao": "v1.0",
+  "tentativas": 2,
+  "repeticao": false,
+  "latencia_ms": 0.02,
+  "rota": "T2_VERIFICAR_SITUACAO",
+  "prompt_id": "PROMPT-02",
+  "validacao": "aprovada",
+  "status": "sucesso",
+  "falha": null,
+  "acao": "RESPONDER",
+  "resposta": {
+    "classificacao": "ENCAMINHAR",
+    "fundamentacao": "A política determina presença comum presencial às terças-feiras.",
+    "regra_aplicada": "Há presença comum presencial às terças-feiras.",
+    "proximo_passo": "Alinhar qualquer exceção com o responsável competente."
+  },
+  "timestamp": "2026-08-27T13:01:43"
+}

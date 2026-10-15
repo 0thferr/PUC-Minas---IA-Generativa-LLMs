@@ -1,0 +1,18 @@
+{
+  "id": "P5",
+  "versao": "v1.0",
+  "categoria": "Representativo",
+  "modalidade": "text",
+  "entrada": "Para onde devo encaminhar dúvidas sobre a política?",
+  "resultado_esperado": "Canal interno RH Responde.",
+  "criterios": "Canal correto; sem invenção.",
+  "risco": "Baixo",
+  "resultado_observado": "Dúvidas ou detalhes não determinados pela política devem ser encaminhados ao canal interno RH Responde.",
+  "status": "ENCAMINHAR",
+  "validacao": "TEXT_ONLY",
+  "fonte": "[]",
+  "latencia_ms": 0.002,
+  "retry": false,
+  "sucesso": true,
+  "falha": ""
+}
